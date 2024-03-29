@@ -10,11 +10,16 @@ K線圖為歷史悠久之金融商品分析工具，簡單易懂，其完整反�
 
 資料範圍：台灣上市櫃所有股票(不包含ETF)
 
+資料來源：TEJ
+
 **測試資料集**
 
 資料期間：2023年
 
 資料範圍：台灣上市櫃所有股票(不包含ETF)
+
+資料來源：TEJ
+
 ## Create Candlestick Graph
 
 **Note**:使用`loser_data.ipynb` 繪製大跌股票K線圖，使用`winner_data.ipynb` 繪製大漲股票K線圖
