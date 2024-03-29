@@ -1,4 +1,4 @@
-# Candlestick Strategy with ''Image recognition'' Model
+# Candlestick Strategy with Image Recognition Model
 K線圖為歷史悠久之金融商品分析工具，簡單易懂，其完整反應金融商品交易價格走勢
 要在金融商品市場中獲利，最重要的獲利來源為資本利得及利息收入，而要賺取資本利得交易價格為最重要的因子，交易價格為所有投資人集體共識，與其實質價值並不一定相關，因此若能透過深度學習方式經由電腦掌握K線圖提供的資訊，能增進報酬率。
 ## Data
@@ -32,12 +32,15 @@ K線圖為歷史悠久之金融商品分析工具，簡單易懂，其完整反�
 
 ## Model
 
-使用考慮residual learning之模型ResNet152進行訓練。
+使用考慮residual learning之模型ResNet152進行訓練。`Model.ipynb`
 
 ## Create Test Graph
 
 以120筆資料為一組，每次往後移動一日並產生一組圖片樣本資料且連續產生生成樣本數後，建立卷積神經網路訓練樣本。
 
+**Note**：因訓練使用的電腦GPU記憶體不足將資料以每100筆做為分段預測如`test_data.ipynb`，再使用`test_path.ipynb`合併資料。
+
 ## Return Backtest
 
 測試台灣股市每檔上市櫃股票，每檔股票以預測率最高之買進訊號及預測率最高之賣出訊號為一組，算取其報酬率，若賣出訊號較買進訊號先出現則不計算其報酬率。
+
