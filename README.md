@@ -18,3 +18,5 @@ K線圖為歷史悠久之金融商品分析工具，雖然概念簡單易懂，�
 資料範圍：台灣上市櫃所有股票(不包含ETF)
 
 資料來源：TEJ
+
+[link text](candlestick_strategy/backtest/README.md)
