@@ -18,7 +18,7 @@
 
 收盤價(元):Close
 
-`winner_data.ipynb`[Winner_code](../winner_data.ipynb): 篩選2019年至2022年中，120日內最低及最高價格上漲150%以上之股票，依據篩選出標未來120日內上漲超過100%且預測日為最低價之前120日K線圖，並將路徑儲存於`Winner_path.csv`。
+[`winner_data.ipynb`](../winner_data.ipynb): 篩選2019年至2022年中，120日內最低及最高價格上漲150%以上之股票，依據篩選出標未來120日內上漲超過100%且預測日為最低價之前120日K線圖，並將路徑儲存於`Winner_path.csv`。
 
-`loser_data.ipynb`[Loser_code](../loser_data.ipynb): 篩選2019年至2022年中，120日內最高及最低價格下跌60%以上之股票，依據篩選出標未來120日內下跌超過30%且預測日為最高價之前120日K線圖，並將路徑儲存於`Loser_path.csv`。
+[`loser_data.ipynb`](../loser_data.ipynb): 篩選2019年至2022年中，120日內最高及最低價格下跌60%以上之股票，依據篩選出標未來120日內下跌超過30%且預測日為最高價之前120日K線圖，並將路徑儲存於`Loser_path.csv`。
 
