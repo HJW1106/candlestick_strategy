@@ -18,29 +18,3 @@ K線圖為歷史悠久之金融商品分析工具，雖然概念簡單易懂，�
 資料範圍：台灣上市櫃所有股票(不包含ETF)
 
 資料來源：TEJ
-
-## Create Candlestick Graph
-
-繪製包含預測日之前120日日K線圖，加入模型進行判斷
-
-**Note**:`loser_data.ipynb` 繪製大跌股票K線圖，`winner_data.ipynb` 繪製大漲股票K線圖
-
-## Model
-
-使用考慮residual learning之模型ResNet152進行訓練。`Model.ipynb`
-
-## Create Test Graph
-
-以120筆資料為一組，每次往後移動一日並產生一組圖片樣本資料且連續產生生成樣本數後，建立卷積神經網路訓練樣本。
-
-**Note**：因訓練使用的電腦GPU記憶體不足將資料以每100筆做為分段預測如`test_data.ipynb`，再使用`test_path.ipynb`合併資料。
-
-## Return Backtest
-
-測試台灣股市每檔上市櫃股票，每檔股票以預測率最高之買進訊號及預測率最高之賣出訊號為一組，算取其報酬率，若賣出訊號較買進訊號先出現則不計算其報酬率。
-
-**Note**：因訓練使用的電腦GPU記憶體不足將資料以每50筆做為分段預測如`backtest.ipynb`，再使用`backtest_data.ipynb`合併資料。
-
-## Consider Liquidity Backtest
-
-依2023年台灣股票市場所有上市櫃股票(不包含ETF)整年平均成交值作為篩選標的之基準，詳如`backtest_consider_vol.ipynb`
