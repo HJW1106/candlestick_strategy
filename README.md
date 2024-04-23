@@ -19,4 +19,4 @@ K線圖為歷史悠久之金融商品分析工具，雖然概念簡單易懂，�
 
 資料來源：TEJ
 
-[link text](candlestick_strategy/backtest/README.md)
+[回測](backtest/README.md)
